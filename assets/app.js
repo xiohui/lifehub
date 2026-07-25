@@ -239,7 +239,7 @@
 
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('assets/sw.js').catch(() => {});
+        navigator.serviceWorker.register('assets/sw.js?v=53').catch(() => {});
       });
     }
   }
