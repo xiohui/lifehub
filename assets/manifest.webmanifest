@@ -1,0 +1,22 @@
+{
+  "name": "生活家 LifeHub",
+  "short_name": "生活家",
+  "description": "集生活、运动、旅行、AI 于一体的个人助手",
+  "lang": "zh-CN",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f4f6fb",
+  "theme_color": "#5b7cfa",
+  "icons": [
+    { "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "shortcuts": [
+    { "name": "新建待办", "short_name": "待办", "url": "?q=todo", "description": "快速添加一件待办" },
+    { "name": "习惯打卡", "short_name": "打卡", "url": "?q=habit", "description": "今天的习惯打卡" },
+    { "name": "记一笔运动", "short_name": "运动", "url": "?q=sports", "description": "记录一次运动" }
+  ]
+}
