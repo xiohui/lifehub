@@ -1,5 +1,5 @@
 /* LifeHub service worker — 离线缓存，让应用可安装、可离线打开 */
-const CACHE = 'lifehub-v52';
+const CACHE = 'lifehub-v53';
 const ASSETS = [
   './',
   './index.html',
