@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#5b7cfa" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="生活家" />
+  <link rel="manifest" href="assets/manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="assets/icon-192.png" />
+  <link rel="icon" type="image/svg+xml" href="assets/icon.svg" />
+  <title>生活家 · LifeHub</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <!-- 手机外框：桌面端居中显示，移动端满屏 -->
+  <div class="phone">
+    <!-- 顶部栏 -->
+    <header class="topbar">
+      <div class="topbar-title" id="topTitle">生活</div>
+      <div class="topbar-sub" id="topSub">让每一天更有序</div>
+    </header>
+
+    <!-- 页面内容区（各模块挂载点） -->
+    <main class="screen" id="screen"></main>
+
+    <!-- 底部 Tab 导航 -->
+    <nav class="tabbar" id="tabbar">
+      <button class="tab active" data-tab="life"><span class="ico">🏠</span><span>生活</span></button>
+      <button class="tab" data-tab="sports"><span class="ico">🏃</span><span>运动</span></button>
+      <button class="tab" data-tab="travel"><span class="ico">✈️</span><span>旅行</span></button>
+      <button class="tab" data-tab="ai"><span class="ico">🤖</span><span>AI</span></button>
+      <button class="tab" data-tab="me"><span class="ico">⚙️</span><span>我的</span></button>
+    </nav>
+  </div>
+
+  <!-- 安装引导：把 PWA 安装到手机主屏，像原生 App 一样用 -->
+  <div id="installBar" class="install-bar" hidden>
+    <button id="installClose" class="install-close" aria-label="关闭">×</button>
+    <div class="install-ico">📲</div>
+    <div class="install-body">
+      <div class="install-title">安装到手机 · 像 App 一样用</div>
+      <div class="install-sub">添加到主屏幕，可离线打开、全屏无地址栏</div>
+      <div id="installInfo" class="install-info">
+        <div><b>安卓 Chrome / Edge：</b>点右上角 ⋮ →「安装应用」</div>
+        <div><b>iOS Safari：</b>点底部分享 →「添加到主屏幕」</div>
+        <div><b>华为浏览器：</b>点 ⋮ →「添加到主屏幕 / 桌面」</div>
+        <div style="margin-top:6px;color:var(--amber)">微信 / QQ 内打开不能直接装，请点右上角 ⋯「在浏览器打开」后再装。</div>
+      </div>
+    </div>
+    <button id="installBtn" class="install-btn">安装</button>
+    <button class="install-skip" data-action="install.noMore">不再提醒</button>
+  </div>
+
+  <script src="assets/store.js"></script>
+  <script src="assets/sport-cats.js"></script>
+  <script src="assets/learn.js"></script>
+  <script src="assets/app.js"></script>
+  <script src="assets/life.js"></script>
+  <script src="assets/sports.js"></script>
+  <script src="assets/travel.js"></script>
+  <script src="assets/ai.js"></script>
+  <script src="assets/settings.js"></script>
+</body>
+</html>
